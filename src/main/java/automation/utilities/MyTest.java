@@ -13,8 +13,7 @@ public class MyTest {
 		 
 		  
 		 String file = "Test.json";
-		 ClassLoader classloader = MyTest.class.getClassLoader();
-		 //converting json into string
+		 ClassLoader classloader = MyTest.class.getClassLoader(); 
 		 String clipjson= IOUtils.toString(classloader.getResourceAsStream(file), "UTF-8");
 		 System.out.println(clipjson);
 		 Map<String, String> parameterforjson = new HashMap<String, String>();
