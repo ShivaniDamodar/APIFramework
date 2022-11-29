@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite:">
+  <test name="FunctionalTest">
+  <classes>
+  <class name="automation.testcases.PostCall">
+  		<parameter name="addUserURI" value="https://reqres.in/api/users"></parameter>
+	    <parameter name="addUserJsonPath" value="Test.json"></parameter>
+  		<parameter name="name" value="Shivani"></parameter>
+	    <parameter name="job" value="SDET"></parameter>
+  </class>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite --> 
