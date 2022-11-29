@@ -14,8 +14,8 @@ public class MyTest {
 		  
 		 String file = "Test.json";
 		 ClassLoader classloader = MyTest.class.getClassLoader();
-		 
-		  String clipjson= IOUtils.toString(classloader.getResourceAsStream(file), "UTF-8");
+		 //converting json into string
+		 String clipjson= IOUtils.toString(classloader.getResourceAsStream(file), "UTF-8");
 		 System.out.println(clipjson);
 		 Map<String, String> parameterforjson = new HashMap<String, String>();
 		 parameterforjson.put("$$name$$", "shivani");
@@ -29,6 +29,7 @@ public class MyTest {
 			 
 			 
 		 }
+		
 		 System.out.println(clipjson);
 		 
 	}
